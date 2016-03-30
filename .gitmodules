@@ -1,0 +1,4 @@
+[submodule "google-api-php-client"]
+	path = google-api-php-client
+	url = git://github.com/google/google-api-php-client
+	branch = v1-master
