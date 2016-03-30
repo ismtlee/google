@@ -1,0 +1,9 @@
+Fetch admob/adsense report by google's new api.
+
+1) fetch report data;
+2) save to database;
+3) send mail by crontab. see also scripts/andplus/sendmail/send_adsense.php|sendmail.php    
+
+
+Database
+
