@@ -26,6 +26,7 @@ $appEdit = new Google_Service_AndroidPublisher_AppEdit();
 $editId = '08558593688518203716';
 $edit = $edits->get($pkgname, $editId);
 $edits_apklistings = $service->edits_apklistings;
-print_r($edits_apklistings->get($pkgname, $editId, 1, 'en-US'));
+$apkVersionCode = 4;
+print_r($edits_apklistings->get($pkgname, $editId, $apkVersionCode, 'en-US'));
 
 
