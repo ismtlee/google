@@ -27,6 +27,10 @@ $editId = '08558593688518203716';
 $edit = $edits->get($pkgname, $editId);
 $edits_apklistings = $service->edits_apklistings;
 $apkVersionCode = 4;
-print_r($edits_apklistings->get($pkgname, $editId, $apkVersionCode, 'en-US'));
+#print_r($edits_apklistings->get($pkgname, $editId, $apkVersionCode, 'en-US'));
+
+$listings = $service->listings;
+print_r($listtings->getFullDescription());
+
 
 

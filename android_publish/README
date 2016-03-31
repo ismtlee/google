@@ -4,3 +4,7 @@ publish android apps.
 Before you can access the API, you must link your Google Play Developer Console to an API project. In most cases, we recommend that you create a new API project, though current API users can link to an existing API project.
 
 Keep in mind that each API project can only be linked to a single Google Play Developer Console account. See more @ https://developers.google.com/android-publisher/getting_started#linking_your_api_project.
+
+--api docs 
+https://developers.google.com/android-publisher/api-ref/edits/listings
+
