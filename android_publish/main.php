@@ -15,10 +15,8 @@ $client->setAssertionCredentials($cred);
 #$access_token = $client->getAccessToken();
 #$client->setAccessToken($access_token);
 
-#$service = new Google_Service_AdSense($client);
 $service = new Google_Service_AndroidPublisher($client); 
-
-#$service->edits->get('com.iendlessrun.tombrushtempleescape', 2);
+/*
 $edits = $service->edits;
 $pkgname = 'com.iendlessrun.tombrushtempleescape';
 $appEdit = new Google_Service_AndroidPublisher_AppEdit();
@@ -28,7 +26,7 @@ $edit = $edits->get($pkgname, $editId);
 $edits_apklistings = $service->edits_apklistings;
 $apkVersionCode = 4;
 #print_r($edits_apklistings->get($pkgname, $editId, $apkVersionCode, 'en-US'));
-
+ */
 $listings = $service->listings;
 print_r($listtings->getFullDescription());
 
