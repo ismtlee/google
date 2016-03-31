@@ -21,7 +21,7 @@ $edits = $service->edits;
 $pkgname = 'com.iendlessrun.tombrushtempleescape';
 
 $editId = '08558593688518203716';
-$edit = $edits->get($pkgname, $editId);
+$edit = $edits->validate($pkgname, $editId);
 
 #print_r($edit);
 return;
