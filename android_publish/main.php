@@ -31,6 +31,7 @@ $fullDesc = $listings->getFullDescription();
 #print_r($fullDesc);
 $listings->setFullDescription("a".$fullDesc);
 $edits_listings->update($pkgname, $editId, $language, $listings);
+$edits->commit($pkgname, $editId);
 return;
 
 #print_r($edit);
