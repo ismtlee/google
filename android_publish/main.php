@@ -30,7 +30,7 @@ $listings = $edits_listings->get($pkgname, $editId, $language);
 $fullDesc = $listings->getFullDescription();
 #print_r($fullDesc);
 $listings->setFullDescription("a".$fullDesc);
-$edits_listings->update($pkgname, $editId, $language, $listing);
+$edits_listings->update($pkgname, $editId, $language, $listings);
 return;
 
 #print_r($edit);
