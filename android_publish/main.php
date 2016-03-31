@@ -23,7 +23,7 @@ $pkgname = 'com.iendlessrun.tombrushtempleescape';
 $editId = '08558593688518203716';
 $edit = $edits->get($pkgname, $editId);
 
-print_r($edit);
+#print_r($edit);
 return;
 
 
