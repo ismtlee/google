@@ -28,8 +28,9 @@ $language = 'en-US';
 $edits_listings = $service->edits_listings;
 $listings = $edits_listings->get($pkgname, $editId, $language);
 $fullDesc = $listings->getFullDescription();
-print_r($fullDesc);
+#print_r($fullDesc);
 $listings->setFullDescription("a".$fullDesc);
+$edits_listings->update($pkgname, $editId, $language, $listing);
 return;
 
 #print_r($edit);
