@@ -23,7 +23,9 @@ $edits = $service->edits;
 $pkgname = 'com.iendlessrun.tombrushtempleescape';
 $appEdit = new Google_Service_AndroidPublisher_AppEdit();
 #$edit = $edits->insert($pkgname, $appEdit);
-$edit = $edits->get($pkgname, '08558593688518203716');
+editId = '08558593688518203716';
+$edit = $edits->get($pkgname, $editId);
 $edits_apklistings = $service->edits_apklistings;
-print_r($edits_apklistings);
+print_r($edits_apklistings->get($pkgname, $editId, 1, 'en-US'));
+
 
