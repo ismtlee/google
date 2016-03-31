@@ -19,6 +19,11 @@ $client->setAssertionCredentials($cred);
 $service = new Google_Service_AndroidPublisher($client); 
 
 #$service->edits->get('com.iendlessrun.tombrushtempleescape', 2);
-print_r($service->edits);
-// print_r($service);
+$edits = $service->edits;
+$pkgname = 'com.iendlessrun.tombrushtempleescape';
+$appEdit = new Google_Service_AndroidPublisher_AppEdit();
+#$edit = $edits->insert($pkgname, $appEdit);
+$edit = $edits->get($pkgname, '08558593688518203716');
+$edits_apklistings = $service->edits_apklistings;
+print_r($edits_apklistings);
 
