@@ -29,6 +29,7 @@ $edits_listings = $service->edits_listings;
 $listings = $edits_listings->get($pkgname, $editId, $language);
 $fullDesc = $listings->getFullDescription();
 print_r($fullDesc);
+$listings->setFullDescription("a".$fullDesc);
 return;
 
 #print_r($edit);
