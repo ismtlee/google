@@ -29,7 +29,7 @@ $edits_listings = $service->edits_listings;
 $listings = $edits_listings->get($pkgname, $editId, $language);
 $fullDesc = $listings->getFullDescription();
 #print_r($fullDesc);
-$listings->setFullDescription("a".$fullDesc);
+$listings->setFullDescription("b".$fullDesc);
 $edits_listings->update($pkgname, $editId, $language, $listings);
 $edits->commit($pkgname, $editId);
 return;
