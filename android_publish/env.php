@@ -11,7 +11,6 @@ set_include_path(LIB_PATH . "/google-api-php-client/src" . PATH_SEPARATOR .
 require_once 'Google/autoload.php';
 
 
-spl_autoload_register(function($class){
-   #require_once('examples/'.$class.'.php');
-   require_once($class.'.php');
-});
+#spl_autoload_register(function($class){
+ #  require_once($class.'.php');
+#});
